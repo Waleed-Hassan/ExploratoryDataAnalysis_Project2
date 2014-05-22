@@ -40,10 +40,8 @@ for(i in years$year)
 }
  
 CumulativeResultBaltimore$City <- "Baltimore"
-CumulativeResultBaltimore$Type <- "Cumulative"
 CumulativeResultLosAngeles$City <- "LosAngeles"
-CumulativeResultBaltimore$Type <- "Cumulative"
- 
+
 CumulativeResult  <- rbind(CumulativeResultBaltimore, CumulativeResultLosAngeles)  
  
 
