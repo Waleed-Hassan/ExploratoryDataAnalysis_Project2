@@ -46,10 +46,6 @@ CumulativeResult  <- rbind(CumulativeResultBaltimore, CumulativeResultLosAngeles
  
 
 
-#GET the Delta to see the change per year 
-
-
-
 png(filename= "Plot6.png", height= 480, width= 780)
 
 qplot(year , TotalEmission , data =CumulativeResult ,facets =.~City , ylab="Cumulative Emission per year") + geom_smooth()
