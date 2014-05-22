@@ -17,7 +17,7 @@ NEI_vehicle <- subset(NEI, SCC %in% SCC_vehicle$SCC)
 #get all years
 years <- sqldf("select DISTINCT  year from NEI group by year order by year ")
  
-#get cumulative and Delta Emission per year
+#get cumulative Emission per year
 CumulativeResultBaltimore = data.frame(year = integer(), TotalEmission = numeric())
 CumulativeResultLosAngeles = data.frame(year = integer(), TotalEmission = numeric())
  
